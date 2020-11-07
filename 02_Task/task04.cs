@@ -15,8 +15,9 @@ public class Hello
 
         for (int i = 0; i < line.Length; i++)
         {
-            string moji = line[i].ToString();
-            if (moji == "3")
+            // string moji = line[i].ToString();
+            char moji =line[i];
+            if (moji == '3')
             {
                 hell = true;
             }
