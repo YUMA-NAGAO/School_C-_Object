@@ -1,7 +1,7 @@
 using System;
 
 
-public class Hello{
+public class task02{
     
     public static void Main(){
     int num = int.Parse(System.Console.ReadLine().Trim());

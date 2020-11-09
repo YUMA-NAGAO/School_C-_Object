@@ -7,6 +7,6 @@ public class Hello4{
         
         double doublea=a*1.0;
         double doubleb=b*1.0;
-        System.Console.WriteLine(doublea/doubleb);
+        Console.WriteLine(doublea/doubleb);
     }
 }

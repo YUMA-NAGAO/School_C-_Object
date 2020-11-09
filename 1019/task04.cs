@@ -1,10 +1,10 @@
 using System;
 
-public class Hello
+public class task041019
 {
     public static void Main(string[] args)
     {
-        string line = System.Console.ReadLine().Trim();
+        string line = Console.ReadLine().Trim();
 
         // 3の倍数かの判定
         int n = int.Parse(line);
@@ -25,12 +25,12 @@ public class Hello
 
         if (hell || multi3)
         {
-            System.Console.WriteLine("{0}は、アホ", n);
+            Console.WriteLine("{0}は、アホ", n);
 
         }
         else
         {
-            System.Console.WriteLine("{0}は、アホではない", n);
+            Console.WriteLine("{0}は、アホではない", n);
         }
 
     }

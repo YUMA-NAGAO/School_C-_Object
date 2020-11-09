@@ -1,14 +1,14 @@
 using System;
 
-public class Hello
+public class task021019
 {
     public static void Main(string[] args)
     {
-        string[] stArrayData = System.Console.ReadLine().Trim().Split(' ');
+        string[] stArrayData = Console.ReadLine().Trim().Split(' ');
 
         int i = int.Parse(stArrayData[0]);
         int j = int.Parse(stArrayData[1]);
-        System.Console.WriteLine(i + j);
+        Console.WriteLine(i + j);
 
     }
 }

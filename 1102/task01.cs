@@ -1,8 +1,9 @@
-public class Hello{
+using System;
+ public class task01{
     public static void Main(){
         PrintHello();
     }
     static void PrintHello(){
-           System.Console.WriteLine("hello");
+           Console.WriteLine("hello");
     }
 }

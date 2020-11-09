@@ -1,7 +1,7 @@
 using System;
 
 
-public class Hello{
+public class task03{
     
     public static void Main(){
         string data=System.Console.ReadLine().Trim();

@@ -1,17 +1,17 @@
 using System;
 
-public class Hello
+public class task011019
 {
     public static void Main(string[] args)
     {
-        int n = int.Parse(System.Console.ReadLine().Trim());
+        int n = int.Parse(Console.ReadLine().Trim());
         for (int i = 1; i < n + 1; i++)
         {
             for (int j = 0; j < i; j++)
             {
-                System.Console.Write("*");
+                Console.Write("*");
             }
-            System.Console.WriteLine("");
+            Console.WriteLine("");
         }
     }
 }

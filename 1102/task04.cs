@@ -1,7 +1,7 @@
 using System;
 
 
-public class Hello{
+public class task04{
     
     public static void Main(){
         int[] a = {10,11,12};　

@@ -1,4 +1,5 @@
 using System;
+
 public class Hello3{
     public static void Main(){
         
@@ -6,6 +7,6 @@ public class Hello3{
         int a =1;
         int b=2;
         
-        System.Console.WriteLine(a/b);
+        Console.WriteLine(a/b);
     }
 }
