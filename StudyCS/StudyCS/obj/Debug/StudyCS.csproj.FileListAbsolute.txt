@@ -1,0 +1,7 @@
+C:\Users\acfoa\Downloads\programing\School_C-_Object\StudyCS\StudyCS\bin\Debug\StudyCS.exe.config
+C:\Users\acfoa\Downloads\programing\School_C-_Object\StudyCS\StudyCS\bin\Debug\StudyCS.exe
+C:\Users\acfoa\Downloads\programing\School_C-_Object\StudyCS\StudyCS\bin\Debug\StudyCS.pdb
+C:\Users\acfoa\Downloads\programing\School_C-_Object\StudyCS\StudyCS\obj\Debug\StudyCS.csprojAssemblyReference.cache
+C:\Users\acfoa\Downloads\programing\School_C-_Object\StudyCS\StudyCS\obj\Debug\StudyCS.csproj.CoreCompileInputs.cache
+C:\Users\acfoa\Downloads\programing\School_C-_Object\StudyCS\StudyCS\obj\Debug\StudyCS.exe
+C:\Users\acfoa\Downloads\programing\School_C-_Object\StudyCS\StudyCS\obj\Debug\StudyCS.pdb
