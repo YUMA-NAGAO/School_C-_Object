@@ -18,13 +18,14 @@ namespace StudyCS
 					int Sum = 0;
 					int ave = 0;
 					string[] tango = line.Split(',');       // カンマで区切って配列に格納
+					
 					for(int i = 0; i < tango.Length; i++)
                     {
 						int n;
+						// 数値のみをint型に変換するために、TryParseを用いた
 						if(int.TryParse(tango[i],out n))
                         {
 							Sum += int.Parse(tango[i]);
-
 						}
 						ave = Sum / tango.Length;
 												
@@ -32,7 +33,6 @@ namespace StudyCS
                     if (ave != 0)
                     {
 						Console.WriteLine(tango[0] + ":平均点" + ave+"点");
-
 					}
 				}
 				file.Close();
