@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Text;
+using System.Collections.Generic;
 
 namespace StudyCS
 {
@@ -44,4 +45,25 @@ namespace StudyCS
 
 		}
     }
+
+	class Seiseki
+	{
+		private Dictionary<int, string> namae;
+		private Dictionary<int, Dictionary<string, int>> seiseki;
+
+		public Seiseki(string filename)
+        {
+			StreamReader file = new StreamReader(filename);
+
+			namae = new Dictionary<int, string>();
+			
+        }
+	}
+
+	class KamokuHeikin
+    {
+
+    }
+
+
 }
