@@ -7,63 +7,68 @@ namespace StudyCS
 {
     class Program
     {
-        static void Main(string[] args)
-        {
-			try
-			{
-				// ファイルを読み取り形式で開く
-				StreamReader file = new StreamReader(@"C:\Users\acfoa\Downloads\programing\School_C-_Object\StudyCS\StudyCS\testkekka.csv", Encoding.UTF8);
-				string line = null;
-				while ((line = file.ReadLine()) != null)    // 1行ずつ読み込む
-				{
-					int Sum = 0;
-					int ave = 0;
-					string[] tango = line.Split(',');       // カンマで区切って配列に格納
-					foreach(string s in tango)
-                    {
-						int n;
-						if(int.TryParse(s,out n))
-                        {
-							Sum += int.Parse(s);
-
-						}
-						ave = Sum / tango.Length;
-												
-					}
-                    if (ave != 0)
-                    {
-						Console.WriteLine(tango[0] + ":平均点" + ave+"点");
-
-					}
-				}
-				file.Close();
-			}
-			catch (Exception e)
-			{
-				Console.WriteLine(e.Message);       // エラーメッセージを表示
-			}
-
+		static void Main(string[] args)
+		{
+			Console.WriteLine("hello");
+			Seiseki sei = new Seiseki("file.csv");
+			double kamokuheikin = Seiseki.KamokuHeikin("国語");
 		}
+
     }
 
-	class Seiseki
+	public class Seiseki
 	{
-		private Dictionary<int, string> namae;
+		private Dictionary<int, string> name;
 		private Dictionary<int, Dictionary<string, int>> seiseki;
 
-		public Seiseki(string filename)
+		public  Seiseki(string filename)
         {
-			StreamReader file = new StreamReader(filename);
+			StreamReader sr = new StreamReader(filename);
 
-			namae = new Dictionary<int, string>();
+			name = new Dictionary<int, string>();
+			seiseki = new Dictionary<int, Dictionary<string, int>>();
+
+			//一行目の処理
+			string line = sr.ReadLine();
+			char[] wake = { ' ', ',', '\t', '\n', '\r' };
+
+			List<string> kamokumei = new List<string>();
+			string[] youso = line.Split(wake, StringSplitOptions.RemoveEmptyEntries);
+			for(int i = 2; i < youso.Length; i++)
+            {
+				kamokumei.Add(youso[i]);
+            }
+
+            while (!sr.EndOfStream)
+            {
+				line = sr.ReadLine();
+				youso = line.Split(wake, StringSplitOptions.RemoveEmptyEntries);
+				int syussekibangou = Int32.Parse(youso[0]);
+				string StudentName = youso[1];
+				name.Add(syussekibangou, StudentName);
+				Dictionary<string, int> kojinseiseki = new Dictionary<string, int>();
+				for(int i = 2; i < youso.Length; i++)
+                {
+					kojinseiseki.Add(kamokumei[i - 2], Int32.Parse(youso[i]));
+
+                }
+
+
+
+            }
+
+		}
+		public static double KamokuHeikin(string kamokumei)
+		{
 			
-        }
+			int gakuseisuu = seiseki.Values.Count;
+			double sum = 0;
+
+			Console.WriteLine("aa");
+		}
+
 	}
 
-	class KamokuHeikin
-    {
-
-    }
 
 
 }
